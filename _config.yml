@@ -26,42 +26,42 @@ url                      : "https://aldomelpignano.github.io"
 baseurl                  : "/sorgente-aperta"
 repository               : "aldomelpignano/sorgente-aperta"
 teaser                   : "/assets/images/fallback_teaser.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+logo                     : "/assets/images/logo.png"
+masthead_title           : #! overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : true
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
-copyright_url            : # "copyright" URL, defaults to site.url
+enable_copy_code_button  : true
+copyright                : " La Sorgente Aperta • Aldo Daniele Melpignano"
+copyright_url            : "https://aldomelpignano.github.io/sorgente-aperta/"
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-    strict               : # 1 for enabled, 0 for disabled (default)
-    input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
-    lang                 : # "en" (default)
-    lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+  provider               : "custom"
+  # disqus:
+  #   shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  # discourse:
+  #   server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  # facebook:
+  #   # https://developers.facebook.com/docs/plugins/comments
+  #   appid                :
+  #   num_posts            : # 5 (default)
+  #   colorscheme          : # "light" (default), "dark"
+  # utterances:
+  #   theme                : # "github-light" (default), "github-dark"
+  #   issue_term           : # "pathname" (default)
+  # giscus:
+  #   repo_id              : # Shown during giscus setup at https://giscus.app
+  #   category_name        : # Full text name of the category
+  #   category_id          : # Shown during giscus setup at https://giscus.app
+  #   discussion_term      : # "pathname" (default), "url", "title", "og:title"
+  #   reactions_enabled    : # '1' for enabled (default), '0' for disabled
+  #   theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  #   strict               : # 1 for enabled, 0 for disabled (default)
+  #   input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
+  #   emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
+  #   lang                 : # "en" (default)
+  #   lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+  # staticman:
+  #   branch               : # "master"
+  #   endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
