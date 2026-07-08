@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "neon"
 
 # Site Settings
 locale                   : "it"
-direction                : "ltr" # set the direction of the page
+direction                : "rtl" # set the direction of the page
 title                    : "La Sorgente Aperta"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
