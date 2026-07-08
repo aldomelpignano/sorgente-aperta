@@ -1,9 +1,10 @@
 main:
-  - title: "Chi siamo"
-    url: https://aldomelpignano.github.io/sorgente-aperta/about
 
   - title: "Articoli"
     url: https://aldomelpignano.github.io/sorgente-aperta/articles
+
+  - title: "Chi siamo"
+    url: https://aldomelpignano.github.io/sorgente-aperta/about
 
   - title: "In cosa crediamo"
     url: https://aldomelpignano.github.io/sorgente-aperta/manifesto
