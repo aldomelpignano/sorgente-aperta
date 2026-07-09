@@ -3,18 +3,22 @@
    ========================================================================== */
 
 .archive {
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin-inline-start: 0 !important;
+  padding-inline-start: 0 !important;
 
   @include breakpoint($large) {
-    float: inline-end;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-inline-end: $right-sidebar-width-narrow;
+    float: inline-start;
+    
+    width: 75%; 
+    
+    padding-inline-end: 0; 
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-    padding-inline-end: $right-sidebar-width;
+    float: inline-start;
+    
+    width: 75%; 
+    padding-inline-end: 0;
   }
 }
 
@@ -32,7 +36,9 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  text-align: center;
+  /* Aumentato l'ultimo valore da 0.5em a 2.5em per dare più distacco dai post */
+  margin: 1.414em 0 2.0em; 
   padding-bottom: 0.5em;
   font-size: $type-size-5;
   color: $muted-text-color;
@@ -40,6 +46,27 @@
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
+  }
+}
+
+.archive__item-meta {
+  display: block;           /* Forza il contenitore ad andare a capo dopo il titolo */
+  font-size: 0.72em;        /* Rende le scritte più piccole rispetto al titolo */
+  color: $muted-text-color;
+  margin-top: 0.5em;        /* Distanza dal titolo sopra */
+  margin-bottom: 0.6em;     /* Distanza dal testo dell'estratto sotto */
+  text-align: left !important;
+  line-height: 1.4;         /* Dà un po' di respiro se l'autore va a capo */
+
+  span {
+    display: inline;        /* Mantiene autore, separatore e data sulla stessa riga finché c'è spazio */
+  }
+
+  .separator {
+    margin: 0 6px;          /* Crea lo spazio orizzontale fisso attorno ai separatori || */
+    color: $muted-text-color;
+    opacity: 0.4;           /* Rende i separatori più discreti */
+    font-weight: bold;
   }
 }
 
@@ -88,7 +115,7 @@
   overflow: hidden;
 
   img {
-    width: 100%;
+    width: 125%;
   }
 }
 
@@ -148,6 +175,7 @@
 
 .grid__item {
   margin-bottom: 2em;
+  text-align: left !important; /* <--- AGGIUNGI QUESTA RIGA QUI */
 
   @include breakpoint($small) {
     float: inline-start;
@@ -193,9 +221,10 @@
   }
 
   .page__meta {
-    margin: 0 0 4px;
-    font-size: 0.6em;
-  }
+      margin: 0 0 4px;
+      font-size: 0.6em;
+      text-align: left !important; /* <--- AGGIUNGI QUESTO per la data */
+    }
 
   .page__meta-sep {
     display: block;
@@ -205,9 +234,10 @@
     }
   }
 
-  .archive__item-title {
+.archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
+    text-align: left !important; /* <--- AGGIUNGI QUESTA RIGA QUI */
   }
 
   .archive__item-excerpt {
@@ -373,7 +403,7 @@
     }
 
     @include breakpoint($small) {
-      text-align: center;
+      text-align: left;
 
       .archive__item-teaser {
         margin: 0 auto;
@@ -429,3 +459,4 @@
 		display: inline-block;
 	}
 }
+

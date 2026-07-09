@@ -18,6 +18,7 @@
         <img src="{{ teaser | relative_url }}" alt="">
       </div>
     {% endif %}
+    
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -25,7 +26,21 @@
         <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    {% include page__meta.html locale=locale type=include.type %}
+    
+    <div class="archive__item-meta">
+      {% if post.author %}
+        <span>Da {{ post.author }}</span>
+      {% elsif site.author.name %}
+        <span>Da {{ site.author.name }}</span>
+      {% endif %}
+      
+      <span class="separator">||</span>
+      
+      {% if post.date %}
+        <span>{{ post.date | date: "%d %b %Y" }}</span>
+      {% endif %}
+    </div>
+
     {% if post.excerpt %}<p class="archive__item-excerpt p-summary" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>

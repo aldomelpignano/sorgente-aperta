@@ -35,3 +35,13 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+/* Sposta la sidebar a destra e i post a sinistra */
+@include breakpoint($large) {
+
+  .sidebar {
+    float: inline-end;   /* Spinge la sidebar della newsletter a destra */
+    width: 25%;
+    padding-inline-start: 2em; /* Regola lo spazio tra i post e la newsletter */
+  }
+}
